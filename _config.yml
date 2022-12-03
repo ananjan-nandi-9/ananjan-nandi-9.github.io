@@ -96,7 +96,9 @@ instagram_id: # your instagram id
 facebook_id: # your facebook id
 discord_id: # your discord id (18-digit unique numerical identifier)
 
-contact_note: None
+contact_note: >
+
+None
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
