@@ -4,7 +4,6 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Ananjan
-middle_name: 
 last_name: Nandi
 email: tgk.ananjan@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -96,9 +95,7 @@ instagram_id: # your instagram id
 facebook_id: # your facebook id
 discord_id: # your discord id (18-digit unique numerical identifier)
 
-contact_note: >
-
-None
+contact_note: 
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
