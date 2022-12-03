@@ -23,11 +23,21 @@
   contents:
     - title: Member Technical Intern
       institution: D.E. Shaw India Private Limited
-      year: June - July 2023
-      description:  
-        - Evaluated performance under high concurrent request load of uWSGI and ASGI based internally developed frameworks for API development and deployment.
-	    - Identified an issue related to Python’s Global Interpreter Lock causing significant slowdown in FastAPI’s handling of concurrent requests to synchronous methods, and implemented a workaround using Dask
-        -  Optimized calculation of Value at Risk metrics from large files using Dask and Joblib for concurrency and shared_memory for eliminating read latency from disk, achieving more than 10X speedup over pure NumPy code. 
+      year: 1933 - 1955
+      description:
+        - Description 1.
+        - Description 2.
+        - title: Description 3.
+          contents:
+            - Sub-description 1.
+            - Sub-description 2.
+
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+      year: 2015-now
+      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 - title: Honors and Awards
   type: time_table
@@ -40,7 +50,19 @@
       items: 
         - Max Planck Medal
 
-- title: Extra-Curricular Activities
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Topic 1.
+      items: 
+        - Description 1.
+        - Description 2.
+    - title: Topic 2.
+      items:
+        - Description 1.
+        - Description 2.
+
+- title: Other Interests
   type: list
   contents:
-    - 
+    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
