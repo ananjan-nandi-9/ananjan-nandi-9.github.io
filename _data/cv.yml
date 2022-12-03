@@ -32,27 +32,30 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2022
       items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
+        - Awarded the Endowment Merit Scholarship for 2022-23 by the IIT Delhi Endowment Fund.
+        - Received the Top 7% Merit Prize for Semesters 1, 2 and 5 from IIT Delhi with 10 CGPA.
+        - Secured a score of 338/340 (170 - Quantitative, 168 - Verbal) in the Graduate Record Examinations organised by ETS .
+    - year: 2021
       items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
+        - Secured All India Rank 144 in the Google Hash Code Qualifiers 2021 with team Breaking Code.
+    - year: 2019
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
+        - Secured All India Rank 73 in General category in JEE Advanced 2019 among 0.24 million candidates.
+        - Secured All India Rank 100 in General category in JEE Mains 2019 among 1.2 million candidates.
+        - Selected in the Indian team for the Asian Physics Olympiad 2019 among top 5 students.
+        - Selected for the Indian Team Selection Camp for the International Physics Olympiad 2019 among top 35 students.
+    - year: 2018
+      items: 
+        - Awarded the KVPY Fellowship with AIR 78 in SA stream and NTSE Scholarship by Government of India.
+        
+- title: Extra-Curricular Activities
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Teaching Assistant for NPTEL NOC - An Introduction to AI (starting Jan 2023)
+    - Vice Captain of Table Tennis for Zanskar House, IITD (2021 - present)
+    - Academic Mentor for Introduction to Computer Science at IITD for the second semester, 2020-21
+    - International Rank 1 in the International English Olympiad (2017)
+    - Recipient of the 5th Scholarship of Excellence in English from the Science Olympiad Foundation (2015-16)
+    - 4th Rank in the National Level Pre-Finals of the Wiz National Spell Bee (2011-12)
