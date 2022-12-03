@@ -25,7 +25,7 @@
       institution: D.E. Shaw India Private Limited
       year: June - July 2022
       description:
-        - Evaluated performance under high concurrent request load of uWSGI and ASGI based internally developed frameworks for API development and deployment.
+        - Evaluated performance under high concurrent request load of uWSGI and ASGI based internally developed frameworks for API development.
         - Identified an issue related to Python’s Global Interpreter Lock causing significant slowdown in FastAPI’s handling of concurrent requests to synchronous methods, and implemented a workaround using Dask.
         -  Optimized calculation of Value at Risk metrics from large files using Dask and Joblib for concurrency and shared_memory for eliminating read latency from disk, achieving more than 10X speedup over pure NumPy code.
 
