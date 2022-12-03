@@ -5,4 +5,4 @@ inline: true
 published: true
 ---
 
-I will be a Teaching Assistant for the NPTEL NOC: An Introduction to Artificial Intelligence in the next semester!
+I will be a Teaching Assistant for the NPTEL NOC: [An Introduction to Artificial Intelligence](https://nptel.ac.in/courses/106102220) in the next semester!
