@@ -38,7 +38,7 @@ Have a look at the results below:
     Boundary of Berambadi forest, Karnataka
 </div>
 
-I have also obtained encouraging results for unsupervised classification of the Cropland class according to cropping intensity and seasonality by utilizing TimeSeriesKMeans to cluster the NDVI time series for the Farmland class. The cluster centers obtained with 5 clusters is displayed below. The clusters correspond to double cropping, and single cropping in the Kharif and Rabi seasons. 
+I have also obtained encouraging results for unsupervised classification of the Cropland class according to cropping intensity and seasonality by utilizing TimeSeriesKMeans to cluster the NDVI time series for the Farmland class. The cluster centers obtained with 4 clusters is displayed below. The clusters correspond to double cropping, and single cropping in the Kharif and Rabi seasons. 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
