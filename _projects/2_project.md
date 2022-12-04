@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Land Use-Land Cover Map Generation
-description: a project with a background image
+description: Prof. Aaditeshwar Seth
 img: assets/img/3.jpg
 importance: 2
 category: work
