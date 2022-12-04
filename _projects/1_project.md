@@ -1,6 +1,6 @@
 ---
 layout: page
-title: project 1
+title: Neuro-Symbolic Knowledge Graph Completion
 description: null
 img: assets/img/12.jpg
 importance: 1
