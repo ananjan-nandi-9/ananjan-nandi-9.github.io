@@ -2,7 +2,7 @@
 layout: page
 title: Neuro-Symbolic Knowledge Graph Completion
 description: 'Prof. Parag Singla, Prof. Mausam'
-img: assets/img/12.jpg
+img: assets/img/KGC.png
 importance: 1
 category: work
 published: true
