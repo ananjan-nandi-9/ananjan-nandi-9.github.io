@@ -10,7 +10,7 @@ published: true
 
 This project is related to the generation of Land Use-Land Cover maps from satellite time series data. The aim is to use temporal data to do finer-grained LULC classification on top of existing spatial classifers such as Dynamic World from Google. Adding temporal data should help in separation of classes such as Farmland and Forest from areas in which greenery is identified, and segregation of Farmland based on crop seasonality and intensity. 
 
-So far, I have obtained F1 Score above 0.95 for the segregation of green pixels into Farmland and Forest by using a classifier trained on a composite of LandSat, Sentinel and MODIS NDVI data, smoothened using Whittaker smoothing. Pipelines for this classification have been implemented on Google Earth Engine and TensorFlow. 
+So far, we have obtained F1 Score above 0.95 for the segregation of green pixels into Farmland and Forest by using a classifier trained on a composite of LandSat, Sentinel and MODIS NDVI data, smoothened using Whittaker smoothing. Pipelines for this classification have been implemented on Google Earth Engine and TensorFlow. 
 
 Have a look at the results below:
 
@@ -38,7 +38,7 @@ Have a look at the results below:
     Boundary of Berambadi forest, Karnataka
 </div>
 
-I have also obtained encouraging results for unsupervised classification of the Cropland class according to cropping intensity and seasonality by utilizing TimeSeriesKMeans to cluster the NDVI time series for the Farmland class. The cluster centers obtained with 4 clusters is displayed below. The clusters correspond to double cropping, and single cropping in the Kharif and Rabi seasons. 
+We have also obtained encouraging results for unsupervised classification of the Cropland class according to cropping intensity and seasonality by utilizing TimeSeriesKMeans to cluster the NDVI time series for the Farmland class. The cluster centers obtained with 4 clusters is displayed below. The clusters correspond to double cropping, and single cropping in the Kharif and Rabi seasons. 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
