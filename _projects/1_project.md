@@ -8,18 +8,19 @@ category: work
 published: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+An early preprint of the work done in this project can be found [here]({{ site.url }}/assets/pdf/ACL_2023_NS_KGC.pdf). 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Abstract: High-quality rules are imperative to the success of Neuro-Symbolic Knowledge Graph (KG)
+models because they equip the models with the desired qualities of interpretability and generalizability. Though necessary, learning logic rules is an inherently hard task. The past rule learning models in KGs have either struggled to learn rules at the scale required for large KGs or the rules learnt by such models are of poor-quality and not diverse. To address this limitation, we propose two novel ways of feeding more high-quality rules to Neuro-Symbolic Knowledge Graph reasoning models. Specifically, we augment the existing set of logic rules of a KG model by exploiting the concepts of abduction and rule inversion. Our proposed
+approach is generic and is applicable to most neuro-symbolic KG models in literature. Experiments on three datasets prove that our proposed approach obtains upto 23% MR and 7% MRR gains over the base models.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Results:
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/Paper_Results.png" title="results" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
