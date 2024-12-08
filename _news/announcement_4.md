@@ -5,4 +5,4 @@ inline: true
 published: true
 ---
 
-My paper "[Simple Augmentations of Logical Rules for Neuro-Symbolic Knowledge Graph Completion](https://aclanthology.org/2023.acl-short.23.pdf)" was accepted as a poster to the main conference of ACL 2023!
+My paper "[Simple Augmentations of Logical Rules for Neuro-Symbolic Knowledge Graph Completion](https://aclanthology.org/2023.acl-short.23.pdf)" was accepted as a poster at ACL 2023!
