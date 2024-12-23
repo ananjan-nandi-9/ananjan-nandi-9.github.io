@@ -1,6 +1,6 @@
 ---
 layout: page
-title: DynaSemble \\ Dynamic Ensembling of Textual and Structure-Based Models for Knowledge Graph Completion
+title: DynaSemble
 description: Prof. Mausam, Prof. Parag Singla
 img: assets/dynasemble.png
 importance: 4

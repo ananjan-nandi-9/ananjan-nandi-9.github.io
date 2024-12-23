@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Roleplay-doh \\ Enabling Domain-Experts to Create LLM-simulated Patients via Eliciting and Adhering to Principles
+title: Roleplay-doh
 description: Prof. Diyi Yang, Prof. Emma Brunskill
 img: assets/rpdteaser-clean.png
 importance: 3

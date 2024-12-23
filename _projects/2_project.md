@@ -1,6 +1,6 @@
 ---
 layout: page
-title: h4rm3l \\ A Language for Composable Jailbreak Attack Synthesis
+title: h4rm3l
 description: Prof. Christopher D. Manning, Prof. Dan Jurafsky
 img: assets/benchmark_plot.jpg
 importance: 2

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Simple Augmentations of Logical Rules for Neuro-Symbolic Knowledge Graph Completion
+title: Rule Augmentations for KGC
 description: Prof. Mausam, Prof. Parag Singla
 img: assets/simpleaug.png
 importance: 5

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sneaking Syntax into Transformer Language Models with Tree Regularization
+title: TreeReg
 description: 'Prof. Christopher D. Manning'
 img: assets/TR1.jpg
 importance: 1
