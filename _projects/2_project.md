@@ -1,47 +1,15 @@
 ---
 layout: page
-title: Land Use-Land Cover Map Generation
-description: Prof. Aaditeshwar Seth
-img: assets/img/LULC_India.png
+title: h4rm3l \\ A Language for Composable Jailbreak Attack Synthesis
+description: Prof. Christopher D. Manning, Prof. Dan Jurafsky
+img: assets/img/benchmark_plot.png
 importance: 2
 category: work
 published: true
 ---
 
-This project is related to the generation of Land Use-Land Cover maps from satellite time series data. The aim is to use temporal data to do finer-grained LULC classification on top of existing spatial classifers such as Dynamic World from Google. Adding temporal data should help in separation of classes such as Farmland and Forest from areas in which greenery is identified, and segregation of Farmland based on crop seasonality and intensity. 
+### Abstract
 
-So far, we have obtained F1 Score above 0.95 for the segregation of green pixels into Farmland and Forest by using a classifier trained on a composite of LandSat, Sentinel and MODIS NDVI data, smoothened using Whittaker smoothing. Pipelines for this classification have been implemented on Google Earth Engine and TensorFlow. 
+The safety of Large Language Models (LLMs) remains a critical concern due to a lack of adequate benchmarks for systematically evaluating their ability to resist generating harmful content. Previous efforts towards automated red teaming involve static or templated sets of illicit requests and adversarial prompts which have limited utility given jailbreak attacks' evolving and composable nature. We propose a novel dynamic benchmark of composable jailbreak attacks to move beyond static datasets and taxonomies of attacks and harms. Our approach consists of three components collectively called h4rm3l: (1) a domain-specific language that formally expresses jailbreak attacks as compositions of parameterized prompt transformation primitives, (2) bandit-based few-shot program synthesis algorithms that generate novel attacks optimized to penetrate the safety filters of a target black box LLM, and (3) open-source automated red-teaming software employing the previous two components. We use h4rm3l to generate a dataset of 2656 successful novel jailbreak attacks targeting 6 state-of-the-art (SOTA) open-source and proprietary LLMs. Several of our synthesized attacks are more effective than previously reported ones, with Attack Success Rates exceeding 90% on SOTA closed language models such as claude-3-haiku and GPT4-o. By generating datasets of jailbreak attacks in a unified formal representation, h4rm3l enables reproducible benchmarking and automated red-teaming, contributes to understanding LLM safety limitations, and supports the development of robust defenses in an increasingly LLM-integrated world.
 
-Have a look at the results below:
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/LULC_Raw.png" title="Satellite Imagery" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/LULC_Mandya.png" title="LULC Map" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    LULC Map for area around Mandya, Karnataka
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/LULC_BRaw.png" title="Satellite Imagery" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/LULC_Berambadi.png" title="LULC Map" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Boundary of Berambadi forest, Karnataka
-</div>
-
-We have also obtained encouraging results for unsupervised classification of the Cropland class according to cropping intensity and seasonality by utilizing TimeSeriesKMeans to cluster the NDVI time series for the Farmland class. The cluster centers obtained with 4 clusters is displayed below. The clusters correspond to double cropping, and single cropping in the Kharif and Rabi seasons. 
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Cropland_Clusters.png" title="Clusters" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+[Link to Paper](https://mdoumbouya.github.io/h4rm3l/)
