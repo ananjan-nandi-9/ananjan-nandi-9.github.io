@@ -2,7 +2,7 @@
 layout: page
 title: Simple Augmentations of Logical Rules for Neuro-Symbolic Knowledge Graph Completion
 description: Prof. Mausam, Prof. Parag Singla
-img: assets/img/simpleaug.png
+img: assets/simpleaug.png
 importance: 5
 category: work
 published: true
