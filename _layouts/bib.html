@@ -28,7 +28,13 @@
           {{reference}}
         {%- else %}
           <!-- Title -->
-          <div class="title">{{entry.title}}</div>
+          <div class="title">
+            {%- if entry.url -%}
+              <a href="{{ entry.url }}" target="_blank" rel="noopener noreferrer">{{entry.title}}</a>
+            {%- else -%}
+              {{entry.title}}
+            {%- endif -%}
+          </div>
           <!-- Author -->
           <div class="author">
           {% assign author_array_size = entry.author_array | size %}
