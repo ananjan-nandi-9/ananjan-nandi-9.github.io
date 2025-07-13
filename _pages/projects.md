@@ -12,11 +12,6 @@ published: true
 
 <!-- pages/projects.md -->
 <div class="projects-container">
-  <div class="projects-header">
-    <h1>Research Projects</h1>
-    <p class="projects-subtitle">Exploring the frontiers of natural language processing and machine learning</p>
-  </div>
-  
   <div class="projects">
     {%- if site.enable_project_categories and page.display_categories %}
       <!-- Display categorized projects -->

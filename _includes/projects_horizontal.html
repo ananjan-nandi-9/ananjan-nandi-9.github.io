@@ -22,28 +22,6 @@
               <strong>Collaborators:</strong> {{ project.collaborators }}
             </div>
             {%- endif %}
-            <div class="row ml-1 mr-1 p-0">
-              {%- if project.github -%}
-              <div class="github-icon">
-                <div class="icon" data-toggle="tooltip" title="Code Repository">
-                  <a href="{{ project.github }}"><i class="fab fa-github gh-icon"></i></a>
-                </div>
-                {%- if project.github_stars -%}
-                <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                  <i class="fas fa-star"></i>
-                  <span id="{{ project.github_stars }}-stars"></span>
-                </span>
-                {%- endif -%}
-              </div>
-              {%- endif -%}
-              {%- if project.paper_url -%}
-              <div class="paper-link ml-3">
-                <div class="icon" data-toggle="tooltip" title="Research Paper">
-                  <a href="{{ project.paper_url }}" target="_blank"><i class="fas fa-file-alt"></i></a>
-                </div>
-              </div>
-              {%- endif -%}
-            </div>
           </div>
         </div>
       </div>
