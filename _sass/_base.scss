@@ -899,21 +899,7 @@ progress {
 }
 
 .project-header {
-  padding: 3rem 0 2rem;
-  border-bottom: 1px solid var(--global-divider-color);
-  
-  .project-category {
-    display: inline-block;
-    background: var(--global-theme-color);
-    color: white;
-    padding: 0.4rem 1rem;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 1rem;
-  }
+  padding: 2rem 0;
   
   .project-title {
     font-size: 2.5rem;
@@ -927,21 +913,20 @@ progress {
     font-size: 1.2rem;
     color: var(--global-text-color-light);
     line-height: 1.5;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
   
-  .project-meta {
-    .collaborators {
-      color: var(--global-text-color-light);
-      margin-bottom: 1.5rem;
-      font-size: 0.95rem;
-    }
-    
-    .project-links {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
+  .collaborators {
+    color: var(--global-text-color-light);
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+  
+  .project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
   }
 }
 
@@ -979,18 +964,32 @@ progress {
 }
 
 .project-image {
-  padding: 2rem 0;
+  padding: 1rem 0 2rem;
+  
+  .project-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
   
   img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0;
   }
 }
 
 .project-content {
-  padding: 2rem 0 4rem;
+  padding: 1rem 0 4rem;
+  
+  .project-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
   
   h1, h2, h3, h4, h5, h6 {
     color: var(--global-text-color);
@@ -1001,10 +1000,10 @@ progress {
   
   h3 {
     font-size: 1.5rem;
-    color: var(--global-theme-color);
-    border-bottom: 2px solid var(--global-theme-color);
-    padding-bottom: 0.5rem;
+    color: var(--global-text-color);
+    margin-top: 0;
     margin-bottom: 1.5rem;
+    font-weight: 600;
   }
   
   p {
@@ -1043,12 +1042,14 @@ progress {
 }
 
 @media (max-width: 768px) {
-  .project-container {
+  .project-container,
+  .project-image .project-container,
+  .project-content .project-container {
     padding: 0 1rem;
   }
   
   .project-header {
-    padding: 2rem 0 1.5rem;
+    padding: 1.5rem 0;
     
     .project-title {
       font-size: 2rem;
