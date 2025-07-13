@@ -1,8 +1,8 @@
 ---
 layout: page
 title: TreeReg
-description: A structured regularizer that softly injects syntactic inductive biases into transformer circuits for improved language modeling
-img: assets/TR1.jpg
+description: A structured regularizer that softly injects syntactic inductive biases into transformer circuits without modifying its architecture
+img: /assets/TR1.jpg
 importance: 1
 category: Natural Language Processing
 collaborators: Prof. Christopher D. Manning

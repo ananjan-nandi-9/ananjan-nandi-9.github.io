@@ -1,18 +1,17 @@
 ---
 layout: page
-title: DynaSemble
-description: Dynamic ensembling approach that intelligently selects and weights models based on input characteristics
-img: assets/dynasemble.jpg
+title: CTC-DRO
+description: A robust optimization approach to improve the performance of the worst-performing languages for multilingual speech recognition models.
+img: /assets/language_training_analysis.png
 importance: 4
-category: Machine Learning
-collaborators: Research team
-github: https://github.com/ananjan-nandi-9/dynasemble
-paper_url: https://example.com/dynasemble
+category: Natural Language Processing
+collaborators: Prof. Tatsunori Hashimoto, Prof. Dan Jurafsky, Prof. Karen Livescu
+paper_url: https://arxiv.org/abs/2502.01777
 published: true
 ---
 
 ### Abstract
 
-Ensemble methods combine multiple models to achieve better performance than individual models. However, traditional ensembles use static combinations that don't adapt to different inputs. We introduce DynaSemble, a dynamic ensembling approach that intelligently selects and weights ensemble members based on input characteristics. Our method learns to predict which models will perform best for specific inputs, leading to improved accuracy and robustness across diverse datasets.
+Modern deep learning models often achieve high overall performance, but consistently fail on specific subgroups. Group distributionally robust optimization (group DRO) addresses this problem by minimizing the worst-group loss, but it fails when group losses misrepresent performance differences between groups. This is common in domains like speech, where the widely used connectionist temporal classification (CTC) loss scales with input length and varies with linguistic and acoustic properties, leading to spurious differences between group losses. We present CTC-DRO, which addresses the shortcomings of the group DRO objective by smoothing the group weight update to prevent overemphasis on consistently high-loss groups, while using input length-matched batching to mitigate CTC's scaling issues. We evaluate CTC-DRO on the task of multilingual automatic speech recognition (ASR) across five language sets from the ML-SUPERB 2.0 benchmark. CTC-DRO consistently outperforms group DRO and CTC-based baseline models, reducing the worst-language error by up to 47.1% and the average error by up to 32.9%. CTC-DRO can be applied to ASR with minimal computational costs, and offers the potential for reducing group disparities in other domains with similar challenges.
 
-[Link to Paper](https://example.com/dynasemble)
+[Link to Paper](https://arxiv.org/abs/2502.01777)

@@ -2,7 +2,7 @@
 layout: page
 title: h4rm3l
 description: A dynamic benchmark of composable jailbreak attacks for systematically evaluating LLM safety
-img: assets/benchmark_plot.jpg
+img: /assets/benchmark_plot.jpg
 importance: 2
 category: AI Safety
 collaborators: Prof. Christopher D. Manning, Prof. Dan Jurafsky
