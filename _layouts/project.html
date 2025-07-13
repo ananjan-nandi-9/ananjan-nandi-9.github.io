@@ -3,32 +3,28 @@ layout: default
 ---
 
 <div class="project-page">
-  <!-- Hero Section -->
-  <div class="project-hero">
-    <div class="project-hero-container">
+  <div class="project-header">
+    <div class="project-container">
+      <span class="project-category">{{ page.category }}</span>
+      <h1 class="project-title">{{ page.title }}</h1>
+      <p class="project-subtitle">{{ page.description }}</p>
+      
       <div class="project-meta">
-        <span class="project-category">{{ page.category }}</span>
-        <h1 class="project-title">{{ page.title }}</h1>
-        <p class="project-description">{{ page.description }}</p>
-        
         {% if page.collaborators %}
-        <div class="project-collaborators">
-          <span class="collaborators-label">Collaborators:</span>
-          <span class="collaborators-list">{{ page.collaborators }}</span>
+        <div class="collaborators">
+          <strong>Collaborators:</strong> {{ page.collaborators }}
         </div>
         {% endif %}
         
-        <div class="project-actions">
+        <div class="project-links">
           {% if page.paper_url %}
-          <a href="{{ page.paper_url }}" class="btn btn-primary" target="_blank">
-            <i class="fas fa-file-alt"></i>
-            <span>Read Paper</span>
+          <a href="{{ page.paper_url }}" class="link-button primary" target="_blank">
+            <i class="fas fa-file-alt"></i> Read Paper
           </a>
           {% endif %}
           {% if page.github %}
-          <a href="{{ page.github }}" class="btn btn-secondary" target="_blank">
-            <i class="fab fa-github"></i>
-            <span>View Code</span>
+          <a href="{{ page.github }}" class="link-button secondary" target="_blank">
+            <i class="fab fa-github"></i> Code
           </a>
           {% endif %}
         </div>
@@ -36,18 +32,16 @@ layout: default
     </div>
   </div>
   
-  <!-- Image Section -->
   {% if page.img %}
-  <div class="project-image-section">
-    <div class="project-image-container">
-      <img src="{{ page.img | relative_url }}" alt="{{ page.title }}" class="project-featured-image">
+  <div class="project-image">
+    <div class="project-container">
+      <img src="{{ page.img | relative_url }}" alt="{{ page.title }}">
     </div>
   </div>
   {% endif %}
   
-  <!-- Content Section -->
   <div class="project-content">
-    <div class="project-content-container">
+    <div class="project-container">
       {{ content }}
     </div>
   </div>
