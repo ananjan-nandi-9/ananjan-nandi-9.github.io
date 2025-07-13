@@ -5,44 +5,49 @@ layout: default
 <div class="project-page">
   <!-- Hero Section -->
   <div class="project-hero">
-    <div class="project-hero-content">
-      <div class="project-hero-text">
+    <div class="project-hero-container">
+      <div class="project-meta">
         <span class="project-category">{{ page.category }}</span>
         <h1 class="project-title">{{ page.title }}</h1>
         <p class="project-description">{{ page.description }}</p>
         
         {% if page.collaborators %}
         <div class="project-collaborators">
-          <i class="fas fa-users"></i>
-          <strong>Collaborators:</strong> {{ page.collaborators }}
+          <span class="collaborators-label">Collaborators:</span>
+          <span class="collaborators-list">{{ page.collaborators }}</span>
         </div>
         {% endif %}
         
-        <div class="project-links">
+        <div class="project-actions">
           {% if page.paper_url %}
           <a href="{{ page.paper_url }}" class="btn btn-primary" target="_blank">
-            <i class="fas fa-file-alt"></i> Read Paper
+            <i class="fas fa-file-alt"></i>
+            <span>Read Paper</span>
           </a>
           {% endif %}
           {% if page.github %}
           <a href="{{ page.github }}" class="btn btn-secondary" target="_blank">
-            <i class="fab fa-github"></i> View Code
+            <i class="fab fa-github"></i>
+            <span>View Code</span>
           </a>
           {% endif %}
         </div>
       </div>
-      
-      {% if page.img %}
-      <div class="project-hero-image">
-        <img src="{{ page.img | relative_url }}" alt="{{ page.title }}" class="project-main-image">
-      </div>
-      {% endif %}
     </div>
   </div>
   
+  <!-- Image Section -->
+  {% if page.img %}
+  <div class="project-image-section">
+    <div class="project-image-container">
+      <img src="{{ page.img | relative_url }}" alt="{{ page.title }}" class="project-featured-image">
+    </div>
+  </div>
+  {% endif %}
+  
   <!-- Content Section -->
   <div class="project-content">
-    <div class="project-content-wrapper">
+    <div class="project-content-container">
       {{ content }}
     </div>
   </div>
