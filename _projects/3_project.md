@@ -5,23 +5,16 @@ description: A framework enabling domain experts to create realistic LLM-simulat
 img: /assets/rpdteaser-clean.png
 importance: 3
 category: Healthcare AI
-collaborators: Domain experts and medical professionals
-github: https://github.com/ananjan-nandi-9/roleplay-doh
+collaborators: Prof. Diyi Yang, Prof. Emma Brunskill
+github: https://github.com/SALT-NLP/roleplay-doh
 paper_url: https://arxiv.org/abs/2407.00870
 published: true
 ---
 
 ### Abstract
 
-Creating realistic simulated patients for medical training is challenging and expensive. We introduce **Roleplay-doh**, a framework that enables domain experts to create LLM-simulated patients by eliciting and adhering to principles. 
+Recent works leverage LLMs to roleplay realistic social scenarios, aiding novices in practicing their social skills. However, simulating sensitive interactions, such as in mental health, is challenging. Privacy concerns restrict data access, and collecting expert feedback, although vital, is laborious. 
 
-Our approach allows medical professionals to define patient characteristics and behaviors through natural language principles, which are then used to guide LLM responses. This democratizes the creation of high-quality simulated patients while maintaining clinical accuracy and educational value.
+To address this, we develop **Roleplay-doh**, a novel human-LLM collaboration pipeline that elicits qualitative feedback from a domain-expert, which is transformed into a set of principles, or natural language rules, that govern an LLM-prompted roleplay. We apply this pipeline to enable senior mental health supporters to create customized AI patients for simulated practice partners for novice counselors. After uncovering issues in GPT-4 simulations not adhering to expert-defined principles, we also introduce a novel principle-adherence prompting pipeline which shows 30% improvements in response quality and principle following for the downstream task. 
 
-The framework bridges the gap between medical expertise and AI technology, allowing healthcare professionals to create sophisticated training scenarios without requiring deep technical knowledge. By leveraging principles-based guidance, we ensure that simulated patients behave consistently and realistically across different interactions.
-
-### Key Features
-
-- **Principle-based guidance**: Medical experts define patient behaviors through natural language principles
-- **Consistent patient simulation**: Maintains character consistency across interactions
-- **Accessible to domain experts**: No technical expertise required for creating simulated patients
-- **Educational value**: Designed specifically for medical training scenarios
+Via a user study with 25 counseling experts, we demonstrate that the pipeline makes it easy and effective to create AI patients that more faithfully resemble real patients, as judged by creators and third-party counselors.

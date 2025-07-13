@@ -6,6 +6,7 @@ img: /assets/benchmark_plot.jpg
 importance: 2
 category: AI Safety
 collaborators: Prof. Christopher D. Manning, Prof. Dan Jurafsky
+github: https://github.com/mdoumbouya/h4rm3l
 paper_url: https://mdoumbouya.github.io/h4rm3l/
 published: true
 ---

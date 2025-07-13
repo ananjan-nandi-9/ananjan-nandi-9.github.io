@@ -1,29 +1,19 @@
 ---
 layout: project
-title: Rule Augmentations for KGC
-description: Simple augmentations to improve coverage and quality of rule sets for Neuro-Symbolic Knowledge Graph Completion
-img: /assets/simpleaug.png
+title: DynaSemble
+description: Dynamic ensembling approach that intelligently selects and weights models based on input characteristics
+img: /assets/dynasemble.png
 importance: 5
-category: Knowledge Graphs
+category: Machine Learning
 collaborators: Prof. Mausam, Prof. Parag Singla
-paper_url: https://aclanthology.org/2023.acl-short.23/
+paper_url: https://example.com/dynasemble
 published: true
 ---
 
 ### Abstract
 
-High-quality and high-coverage rule sets are imperative to the success of Neuro-Symbolic Knowledge Graph Completion (NS-KGC) models, because they form the basis of all symbolic inferences. Recent literature builds neural models for generating rule sets, however, preliminary experiments show that they struggle with maintaining high coverage.
+We consider two popular approaches to Knowledge Graph Completion (KGC): textual models that rely on textual entity descriptions, and structure-based models that exploit the connectivity structure of the Knowledge Graph (KG). 
 
-In this work, we suggest three simple augmentations to existing rule sets:
+Preliminary experiments show that these approaches have complementary strengths: structure-based models perform exceptionally well when the gold answer is easily reachable from the query head in the KG, while textual models exploit descriptions to give good performance even when the gold answer is not easily reachable. 
 
-1. **Transforming rules to their abductive forms**: Converting deductive rules into abductive reasoning patterns
-2. **Generating equivalent rules using inverse relations**: Creating rules that utilize inverse forms of constituent relations  
-3. **Random walks for rule proposal**: Using random walks to propose new rules and expand coverage
-
-Finally, we prune potentially low quality rules to maintain overall rule set quality.
-
-### Results
-
-Experiments over four datasets and five ruleset-baseline settings suggest that these simple augmentations consistently improve results, obtaining up to **7.1 pt MRR** and **8.5 pt Hits@1** gains over using rules without augmentations.
-
-The approach demonstrates that simple, principled augmentations can significantly enhance the performance of neuro-symbolic knowledge graph completion systems without requiring complex architectural changes.
+In response, we propose **DynaSemble**, a novel method for learning query-dependent ensemble weights to combine these approaches by using the distributions of scores assigned by the models in the ensemble to all candidate entities. **DynaSemble** achieves state-of-the-art results on three standard KGC datasets, with up to 6.8 pt MRR and 8.3 pt Hits@1 gains over the best baseline model for the WN18RR dataset.

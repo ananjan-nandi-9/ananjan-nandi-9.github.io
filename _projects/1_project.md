@@ -6,6 +6,7 @@ img: /assets/TR1.jpg
 importance: 1
 category: Natural Language Processing
 collaborators: Prof. Christopher D. Manning
+github: https://github.com/ananjan-nandi-9/tree_regularization
 paper_url: https://arxiv.org/abs/2411.18885
 published: true
 ---
