@@ -1,10 +1,12 @@
 ---
 layout: page
 title: TreeReg
-description: 'Prof. Christopher D. Manning'
+description: A structured regularizer that softly injects syntactic inductive biases into transformer circuits for improved language modeling
 img: assets/TR1.jpg
 importance: 1
-category: work
+category: Natural Language Processing
+collaborators: Prof. Christopher D. Manning
+paper_url: https://arxiv.org/abs/2411.18885
 published: true
 ---
 

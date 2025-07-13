@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Rule Augmentations for KGC
-description: Prof. Mausam, Prof. Parag Singla
+description: Simple augmentations to improve coverage and quality of rule sets for Neuro-Symbolic Knowledge Graph Completion
 img: assets/simpleaug.png
 importance: 5
-category: work
+category: Knowledge Graphs
+collaborators: Prof. Mausam, Prof. Parag Singla
+paper_url: https://aclanthology.org/2023.acl-short.23/
 published: true
 ---
 

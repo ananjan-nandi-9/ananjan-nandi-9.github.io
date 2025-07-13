@@ -1,12 +1,14 @@
 ---
 layout: page
 title: DynaSemble
-description: Dynamic ensembling for better model performance and robustness
+description: Dynamic ensembling approach that intelligently selects and weights models based on input characteristics
 img: assets/dynasemble.jpg
 importance: 4
-category: work
-published: true
+category: Machine Learning
+collaborators: Research team
 github: https://github.com/ananjan-nandi-9/dynasemble
+paper_url: https://example.com/dynasemble
+published: true
 ---
 
 ### Abstract

@@ -534,10 +534,23 @@ footer.sticky-bottom {
       font-size: 0.95rem;
     }
     
+    .project-collaborators {
+      color: var(--global-text-color-light);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      background: var(--global-bg-color);
+      border-radius: 6px;
+      border-left: 3px solid var(--global-theme-color);
+    }
+    
     .project-links {
       margin-top: auto;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
       
-      .github-icon {
+      .github-icon, .paper-link {
         display: flex;
         align-items: center;
         gap: 0.5rem;

@@ -1,12 +1,14 @@
 ---
 layout: page
 title: Roleplay-doh
-description: Enabling domain-experts to create LLM-simulated patients via eliciting and adhering to principles
+description: A framework enabling domain experts to create realistic LLM-simulated patients for medical training
 img: assets/roleplay.jpg
 importance: 3
-category: work
-published: true
+category: Healthcare AI
+collaborators: Domain experts and medical professionals
 github: https://github.com/ananjan-nandi-9/roleplay-doh
+paper_url: https://arxiv.org/abs/2407.00870
+published: true
 ---
 
 ### Abstract

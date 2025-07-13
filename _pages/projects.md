@@ -5,7 +5,7 @@ permalink: /projects/
 description: A showcase of my research projects
 nav: true
 nav_order: 2
-display_categories: null
+display_categories: [Natural Language Processing, AI Safety, Healthcare AI, Machine Learning, Knowledge Graphs]
 horizontal: false
 published: true
 ---
