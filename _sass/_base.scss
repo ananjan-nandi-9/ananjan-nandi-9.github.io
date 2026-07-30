@@ -1086,6 +1086,12 @@ progress {
 .profile img {
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(2, 8, 20, 0.18);
+  }
 }
 
 .news > h2::after,
@@ -1227,6 +1233,7 @@ h1, h2, h3, h4, h5, h6, .post-title, .navbar {
   text-decoration-color: var(--global-theme-tint);
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;
+  transition: color 0.15s ease-in-out, text-decoration-color 0.15s ease-in-out;
 
   &:hover {
     color: var(--global-theme-color);
@@ -1264,6 +1271,7 @@ h1, h2, h3, h4, h5, h6, .post-title, .navbar {
         color: var(--global-theme-color);
         border-color: var(--global-theme-color);
         transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(2, 8, 20, 0.1);
       }
     }
   }
@@ -1311,7 +1319,7 @@ h1, h2, h3, h4, h5, h6, .post-title, .navbar {
       font-size: 0.92rem;
       font-weight: 600;
       cursor: pointer;
-      transition: border-color 0.15s ease-in-out, background 0.15s ease-in-out, color 0.15s ease-in-out;
+      transition: border-color 0.15s ease-in-out, background 0.15s ease-in-out, color 0.15s ease-in-out, transform 0.15s ease-in-out;
 
       i {
         color: var(--topic-accent);
@@ -1319,6 +1327,8 @@ h1, h2, h3, h4, h5, h6, .post-title, .navbar {
 
       &:hover {
         border-color: var(--topic-accent);
+        background: var(--topic-accent-tint);
+        transform: translateY(-1px);
       }
 
       &.active {
@@ -1382,11 +1392,12 @@ h1, h2, h3, h4, h5, h6, .post-title, .navbar {
     padding: 1.3rem 1.5rem;
     border: 1px solid var(--global-divider-color);
     border-radius: 0.7rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out;
 
     &:hover {
       border-color: var(--global-theme-color);
       box-shadow: 0 6px 20px rgba(2, 8, 20, 0.08);
+      transform: translateY(-2px);
     }
 
     div.preview {
@@ -1586,6 +1597,12 @@ h1, h2, h3, h4, h5, h6, .post-title, .navbar {
     background: var(--global-card-bg-color);
     border: 1px solid var(--global-divider-color);
     border-radius: 0.6rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &:hover {
+      border-color: var(--global-theme-color);
+      box-shadow: 0 4px 14px rgba(2, 8, 20, 0.06);
+    }
   }
 
   .news-icon {
@@ -1617,3 +1634,20 @@ h1, h2, h3, h4, h5, h6, .post-title, .navbar {
   }
 }
 
+
+// Respect users who opt out of motion
+
+@media (prefers-reduced-motion: reduce) {
+  .profile img,
+  .social .contact-icons a,
+  .publications .pub-topic-tab,
+  ol.bibliography li,
+  .news .news-item,
+  .post .clearfix a {
+    transition: none;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
