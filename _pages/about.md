@@ -2,28 +2,21 @@
 layout: about
 title: about
 permalink: /
-subtitle: null
+subtitle: <span class="role">Founder & Researcher</span> @ <span class="affiliation">Stanford University</span> & <span class="affiliation">Northeastern University</span>
 profile:
   align: right
-  image: sequoia_pic.jpg
+  image: sequoia_face.jpg
   image_circular: true
-  address: |
-    <p>Incoming PhD Candidate</p>
-    <p>Stanford University</p>
-news: false
+news: true
 selected_papers: true
 social: true
 published: true
 ---
 
-## About Me
+I am a startup founder and a researcher affiliated with [Stanford University](https://www.stanford.edu/) and [Northeastern University](https://www.northeastern.edu/). I am currently building something new — for now, in stealth.
 
-I am an incoming PhD candidate in Computer Science at [Stanford University](https://www.stanford.edu/) currently advised by [Monica Lam](https://suif.stanford.edu/~lam/). I am primarily interested in enhancing the generalization and reasoning capabilities of language models by leveraging structure inherent in training data. As a result, I am exploring approaches for automatically curating structured training data and developing methods that enable models to learn interpretable, robust algorithms by effectively leveraging this structure. 
+My research focuses on enhancing the generalization and reasoning capabilities of language models by leveraging structure inherent in training data. My work so far spans three threads: [**structure for better learning**](/publications/){:.topic-structure} — injecting syntactic, logical and curricular structure into model training ([TreeReg](https://www.treereg.dev/), [DynaSemble](https://aclanthology.org/2024.acl-short.20/)); [**robustness & safety**](/publications/){:.topic-safety} — stress-testing models and closing their failure modes ([h4rm3l](https://mdoumbouya.github.io/h4rm3l/), [CTC-DRO](https://openreview.net/forum?id=yt40xuRBA9)); and [**human-centered AI**](/publications/){:.topic-human} — building systems that serve domain experts and communities ([Roleplay-doh](https://aclanthology.org/2024.emnlp-main.591/)). Most recently, I have been thinking about **programmable agents** ([Shepherd](https://arxiv.org/abs/2605.10913){:.topic-agents}), and I am co-organizing the [NeurIPS 2026 Workshop on Responsible Use of Meta-Agents](https://meta-agents-workshop.github.io/){:.topic-agents}.
 
-When I am not doing research, you can usually find me at a table tennis table. Over the past year, I have hiked in five different U.S. states, and I spent a lot of my childhood exploring the Indian Himalayas. I am also into video games, enjoy most kinds of music, and love horror in all forms of media.
+I hold a Master's degree in Computer Science from [Stanford](https://www.stanford.edu/) and a Bachelor's degree in Computer Science and Engineering from [IIT Delhi](https://www.cse.iitd.ernet.in/). I am fortunate to have worked with [Chris Manning](https://nlp.stanford.edu/~manning/), [Dan Jurafsky](https://web.stanford.edu/~jurafsky/), [Karen Livescu](https://home.ttic.edu/~klivescu/), [Diyi Yang](https://cs.stanford.edu/~diyiy/group.html) and [Tatsunori Hashimoto](https://thashim.github.io/) at the [Stanford NLP Group](https://nlp.stanford.edu/people/), as well as [Mausam](https://www.cse.iitd.ac.in/~mausam), [Parag Singla](https://www.cse.iitd.ac.in/~parags/) and [Aaditeshwar Seth](https://www.cse.iitd.ac.in/~aseth/) at IIT Delhi.
 
-
-## Experience
-My research has spanned fields including [syntactic language modeling](https://www.treereg.dev/), [LLM jailbreaking](https://mdoumbouya.github.io/h4rm3l/), [speech recognition](https://arxiv.org/abs/2502.01777), [information retrieval](https://arxiv.org/abs/2407.01994) and [AI for mental health](https://arxiv.org/abs/2407.00870). I have a Master's degree in Computer Science from [Stanford](https://www.stanford.edu/), and a Bachelor's degree in Computer Science and Engineering from [IIT Delhi](https://www.cse.iitd.ernet.in/). 
-
-I am fortunate to have worked with [Chris Manning](https://nlp.stanford.edu/~manning/), [Dan Jurafsky](https://web.stanford.edu/~jurafsky/), [Karen Livescu](https://home.ttic.edu/~klivescu/), [Diyi Yang](https://cs.stanford.edu/~diyiy/group.html) and [Tatsunori Hashimoto](https://thashim.github.io/) at the [Stanford NLP Group](https://nlp.stanford.edu/people/), as well as [Mausam](https://www.cse.iitd.ac.in/~mausam), [Parag Singla](https://www.cse.iitd.ac.in/~parags/) and [Aaditeshwar Seth](https://www.cse.iitd.ac.in/~aseth/) at IIT Delhi. I have also interned at [Palantir Technologies](https://www.palantir.com/), [KnowDis Data Science](https://www.knowdis.ai/) and [D.E. Shaw India](https://www.deshawindia.com/).
+When I am not working, you can usually find me at a table tennis table. Over the past year, I have hiked in five different U.S. states, and I spent a lot of my childhood exploring the Indian Himalayas. I am also into video games, enjoy most kinds of music, and love horror in all forms of media.

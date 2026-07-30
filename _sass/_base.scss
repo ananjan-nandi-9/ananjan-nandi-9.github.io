@@ -141,6 +141,15 @@ blockquote {
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
+  border-top: 3px solid;
+  border-image: linear-gradient(
+      90deg,
+      var(--topic-structure),
+      var(--topic-safety),
+      var(--topic-human),
+      var(--topic-agents)
+    )
+    1;
 }
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
@@ -1068,6 +1077,544 @@ progress {
   .link-button {
     width: 100%;
     justify-content: center;
+  }
+}
+
+
+// Square-crop the profile photo so rounded-circle renders a true circle
+
+.profile img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+// Research-spectrum accents threaded through the page
+
+.profile img.rounded-circle {
+  padding: 5px;
+  background: conic-gradient(
+    from 20deg,
+    var(--topic-structure),
+    var(--topic-safety),
+    var(--topic-human),
+    var(--topic-agents),
+    var(--topic-structure)
+  );
+}
+
+.news > h2::after,
+.publications > h2::after {
+  content: '';
+  display: block;
+  width: 3.2rem;
+  height: 0.25rem;
+  border-radius: 0.125rem;
+  margin-top: 0.45rem;
+  background: linear-gradient(
+    90deg,
+    var(--topic-structure),
+    var(--topic-safety),
+    var(--topic-human),
+    var(--topic-agents)
+  );
+}
+
+.news .news-item {
+  &:nth-of-type(4n + 1) .news-icon {
+    color: var(--topic-structure);
+    background: var(--topic-structure-tint);
+  }
+  &:nth-of-type(4n + 2) .news-icon {
+    color: var(--topic-safety);
+    background: var(--topic-safety-tint);
+  }
+  &:nth-of-type(4n + 3) .news-icon {
+    color: var(--topic-human);
+    background: var(--topic-human-tint);
+  }
+  &:nth-of-type(4n) .news-icon {
+    color: var(--topic-agents);
+    background: var(--topic-agents-tint);
+  }
+}
+
+.post .clearfix {
+  a.topic-structure,
+  a.topic-structure:hover {
+    color: var(--topic-structure);
+  }
+  a.topic-safety,
+  a.topic-safety:hover {
+    color: var(--topic-safety);
+  }
+  a.topic-human,
+  a.topic-human:hover {
+    color: var(--topic-human);
+  }
+  a.topic-agents,
+  a.topic-agents:hover {
+    color: var(--topic-agents);
+  }
+}
+
+footer {
+  border-top: 3px solid;
+  border-image: linear-gradient(
+      90deg,
+      var(--topic-structure),
+      var(--topic-safety),
+      var(--topic-human),
+      var(--topic-agents)
+    )
+    1;
+}
+
+// Site-wide typography refresh
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .post-title, .navbar {
+  font-family: inherit;
+  letter-spacing: -0.01em;
+}
+
+.post-title {
+  font-weight: 700;
+}
+
+// Hero & reading rhythm on the about page
+
+.post .clearfix p {
+  line-height: 1.7;
+  margin-bottom: 1.15rem;
+}
+
+.post-header {
+  margin-bottom: 2rem;
+}
+
+.post-title {
+  font-weight: 800;
+  font-size: 2.6rem;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 576px) {
+  .post-title {
+    font-size: 2rem;
+  }
+}
+
+.post .desc {
+  font-size: 1.05rem;
+  color: var(--global-text-color-light);
+  margin-top: 0.25rem;
+
+  .role {
+    color: var(--global-theme-color);
+    font-weight: 600;
+  }
+
+  .affiliation {
+    color: var(--global-text-color);
+    font-weight: 600;
+  }
+}
+
+// Quiet prose links — the accent color stays reserved for actions and highlights
+
+.post .clearfix a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--global-theme-tint);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+
+  &:hover {
+    color: var(--global-theme-color);
+    text-decoration-color: var(--global-theme-color);
+  }
+}
+
+// Circular social buttons under the bio
+
+.social {
+  margin-top: 0.5rem;
+
+  .contact-icons {
+    font-size: 1.15rem;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 0.45rem;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 50%;
+      background: var(--global-card-bg-color);
+      color: var(--global-text-color);
+      transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out, transform 0.15s ease-in-out;
+
+      &:hover {
+        color: var(--global-theme-color);
+        border-color: var(--global-theme-color);
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+// Section headings (Recent, Selected Publications)
+
+.news h2,
+.publications > h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.4rem;
+}
+
+.news .news-note,
+.publications .pub-list-note {
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+  margin-bottom: 1.4rem;
+}
+
+// Homepage publication topics
+
+.publications {
+  margin-top: 4.5rem;
+
+  .pub-topic-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1.5rem 0 1.25rem;
+
+    .pub-topic-tab {
+      --topic-accent: var(--global-theme-color);
+      --topic-accent-tint: var(--global-theme-tint);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 1.05rem;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 2rem;
+      background: var(--global-card-bg-color);
+      color: var(--global-text-color);
+      font-size: 0.92rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color 0.15s ease-in-out, background 0.15s ease-in-out, color 0.15s ease-in-out;
+
+      i {
+        color: var(--topic-accent);
+      }
+
+      &:hover {
+        border-color: var(--topic-accent);
+      }
+
+      &.active {
+        background: var(--topic-accent-tint);
+        border-color: var(--topic-accent);
+        color: var(--topic-accent);
+      }
+    }
+  }
+
+  .pub-topic-panel {
+    --topic-accent: var(--global-theme-color);
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    .topic-desc {
+      margin: 0 0 1.1rem;
+      padding-left: 0.75rem;
+      border-left: 3px solid var(--topic-accent);
+      font-size: 0.88rem;
+      color: var(--global-text-color-light);
+    }
+  }
+
+  .pub-topic-tab,
+  .pub-topic-panel {
+    &[data-topic='structure'] {
+      --topic-accent: var(--topic-structure);
+      --topic-accent-tint: var(--topic-structure-tint);
+    }
+    &[data-topic='safety'] {
+      --topic-accent: var(--topic-safety);
+      --topic-accent-tint: var(--topic-safety-tint);
+    }
+    &[data-topic='human'] {
+      --topic-accent: var(--topic-human);
+      --topic-accent-tint: var(--topic-human-tint);
+    }
+    &[data-topic='agents'] {
+      --topic-accent: var(--topic-agents);
+      --topic-accent-tint: var(--topic-agents-tint);
+    }
+  }
+
+  h2.year {
+    border-top: none;
+    text-align: left;
+    color: var(--global-text-color);
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-top: 3rem;
+    margin-bottom: 1.25rem;
+  }
+
+  ol.bibliography li {
+    background: var(--global-card-bg-color);
+    margin-bottom: 1.1rem;
+    padding: 1.3rem 1.5rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.7rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &:hover {
+      border-color: var(--global-theme-color);
+      box-shadow: 0 6px 20px rgba(2, 8, 20, 0.08);
+    }
+
+    div.preview {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 148px;
+      padding: 0.5rem;
+      background: #ffffff;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      max-width: none;
+    }
+
+    img.preview {
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      min-width: 0;
+      object-fit: contain;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    @media (max-width: 576px) {
+      div.preview {
+        margin-bottom: 0.9rem;
+      }
+    }
+
+    .title {
+      font-size: 1.08rem;
+      font-weight: 700;
+      line-height: 1.45;
+
+      a {
+        color: var(--global-text-color);
+
+        &:hover {
+          color: var(--global-theme-color);
+          text-decoration: none;
+        }
+      }
+
+      .award-badge {
+        display: inline-block;
+        margin-left: 0.4rem;
+        padding: 0.05rem 0.5rem;
+        font-size: 0.7rem;
+        font-weight: 600;
+        vertical-align: middle;
+        color: var(--global-theme-color);
+        border: 1px solid var(--global-theme-color);
+        border-radius: 1rem;
+        white-space: nowrap;
+      }
+    }
+
+    .author {
+      margin-top: 0.25rem;
+      font-size: 0.9rem;
+      color: var(--global-text-color-light);
+
+      > em {
+        border-bottom: none;
+        font-style: normal;
+        color: var(--global-theme-color);
+        font-weight: 600;
+      }
+
+      a {
+        border-bottom: none;
+        color: var(--global-text-color-light);
+
+        &:hover {
+          color: var(--global-theme-color);
+          border-bottom: none;
+        }
+      }
+    }
+
+    .pub-meta {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-top: 0.5rem;
+
+      .venue-pill {
+        display: inline-block;
+        padding: 0.12rem 0.65rem;
+        border-radius: 2rem;
+        background-color: var(--global-theme-color);
+        color: #ffffff;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .pub-date,
+      .periodical {
+        font-size: 0.84rem;
+        color: var(--global-text-color-light);
+      }
+    }
+
+    .tldr {
+      margin-top: 0.6rem;
+      color: var(--global-text-color-light);
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+
+    .abstract-inline {
+      margin-top: 0.6rem;
+      color: var(--global-text-color-light);
+      font-size: 0.9rem;
+      line-height: 1.55;
+
+      p {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin: 0;
+      }
+
+      &.expanded p {
+        display: block;
+        overflow: visible;
+      }
+
+      .abstract-toggle {
+        border: none;
+        background: none;
+        padding: 0;
+        margin-top: 0.2rem;
+        color: var(--global-theme-color);
+        font-size: 0.84rem;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .links {
+      margin-top: 0.85rem;
+
+      a.btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.78rem;
+        font-weight: 600;
+        text-transform: none;
+        letter-spacing: 0;
+        border: 1px solid var(--global-divider-color);
+        border-radius: 0.45rem;
+        background: transparent;
+        color: var(--global-text-color);
+        padding: 0.25rem 0.7rem;
+        margin-right: 0.3rem;
+        margin-bottom: 0.3rem;
+
+        i {
+          font-size: 0.7rem;
+          color: var(--global-text-color-light);
+        }
+
+        &:hover {
+          color: var(--global-theme-color);
+          border-color: var(--global-theme-color);
+
+          i {
+            color: var(--global-theme-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+// "Recent" news list
+
+.news {
+  margin-top: 4.5rem;
+
+  .news-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.9rem;
+    padding: 0.95rem 1.15rem;
+    margin-bottom: 0.75rem;
+    background: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.6rem;
+  }
+
+  .news-icon {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background: var(--global-theme-tint);
+    color: var(--global-theme-color);
+    font-size: 0.8rem;
+  }
+
+  .news-text {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .news-date {
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
+    color: var(--global-text-color-light);
+
+    i {
+      margin-right: 0.35rem;
+    }
   }
 }
 

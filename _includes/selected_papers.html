@@ -1,5 +1,54 @@
 
           <div class="publications">
-            <h2>Selected Publications <a href="https://scholar.google.com/citations?user=I3uNMUEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i></a></h2>
-            {% bibliography -f papers -q @*[selected=true]* %}
+            <h2>Publications</h2>
+            <p class="pub-list-note">
+              Grouped by topic &mdash; click a topic to explore. See the <a href="{{ '/publications/' | relative_url }}">full chronological list</a>
+              or <a href="https://scholar.google.com/citations?user=I3uNMUEAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>.
+            </p>
+
+            {% assign topic_list = "structure|fa-project-diagram|Structure & Generalization|Leveraging linguistic and symbolic structure for more robust, data-efficient models. ;; safety|fa-shield-alt|Robustness & Safety|Stress-testing and improving models across attacks, languages and distribution shifts. ;; human|fa-user-friends|Human-Centered AI|Building AI systems with and for the domain experts and communities who use them. ;; agents|fa-robot|Programmable Agents|Runtimes and abstractions for inspecting, steering and composing LLM agents." | split: " ;; " %}
+
+            <div class="pub-topic-tabs" role="tablist" aria-label="Publication topics">
+              {% for topic_entry in topic_list %}
+                {% assign topic_parts = topic_entry | split: "|" %}
+                <button class="pub-topic-tab{% if forloop.first %} active{% endif %}"
+                        id="pub-tab-{{ topic_parts[0] }}"
+                        role="tab"
+                        aria-controls="pub-panel-{{ topic_parts[0] }}"
+                        aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+                        data-topic="{{ topic_parts[0] }}">
+                  <i class="fas {{ topic_parts[1] }}"></i>
+                  <span>{{ topic_parts[2] }}</span>
+                </button>
+              {% endfor %}
+            </div>
+
+            {% for topic_entry in topic_list %}
+              {% assign topic_parts = topic_entry | split: "|" %}
+              {% assign topic_key = topic_parts[0] %}
+              <div class="pub-topic-panel{% if forloop.first %} active{% endif %}"
+                   id="pub-panel-{{ topic_key }}"
+                   data-topic="{{ topic_key }}"
+                   role="tabpanel"
+                   aria-labelledby="pub-tab-{{ topic_key }}">
+                <p class="topic-desc">{{ topic_parts[3] }}</p>
+                {% bibliography -f papers -q @*[topic={{ topic_key }}]* %}
+              </div>
+            {% endfor %}
+
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                document.querySelectorAll('.pub-topic-tab').forEach(function (tab) {
+                  tab.addEventListener('click', function () {
+                    document.querySelectorAll('.pub-topic-tab, .pub-topic-panel').forEach(function (el) {
+                      el.classList.remove('active');
+                      if (el.getAttribute('role') === 'tab') el.setAttribute('aria-selected', 'false');
+                    });
+                    tab.classList.add('active');
+                    tab.setAttribute('aria-selected', 'true');
+                    document.getElementById('pub-panel-' + tab.dataset.topic).classList.add('active');
+                  });
+                });
+              });
+            </script>
           </div>

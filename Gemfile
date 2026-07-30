@@ -24,3 +24,9 @@ group :other_plugins do
     gem 'httparty'
     gem 'feedjira'
 end
+# stdlib gems no longer bundled with Ruby >= 3.4
+gem 'ostruct'
+gem 'csv'
+gem 'logger'
+gem 'base64'
+gem 'bigdecimal'

@@ -3,18 +3,29 @@
  ******************************************************************************/
  
 :root {
-  --global-bg-color: #{$white-color};
+  --global-bg-color: #F8FAFC;
   --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$purple-color};
-  --global-hover-color: #{$purple-color};
-  --global-footer-bg-color: #{$grey-color-dark};
-  --global-footer-text-color: #{$grey-color-light};
+  --global-text-color: #0F172A;
+  --global-text-color-light: #64748B;
+  --global-theme-color: #{$teal-color};
+  --global-theme-tint: rgba(15, 118, 110, 0.1);
+  --global-hover-color: #{$teal-color};
+  --global-footer-bg-color: #0F172A;
+  --global-footer-text-color: #94A3B8;
   --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(0,0,0,.1);
+  --global-divider-color: #E2E8F0;
   --global-card-bg-color: #{$white-color};
+
+  /* Research-topic accents */
+  --topic-structure: #4F46E5;
+  --topic-structure-tint: rgba(79, 70, 229, 0.1);
+  --topic-safety: #E11D48;
+  --topic-safety-tint: rgba(225, 29, 72, 0.09);
+  --topic-human: #0F766E;
+  --topic-human-tint: rgba(15, 118, 110, 0.1);
+  --topic-agents: #B45309;
+  --topic-agents-tint: rgba(180, 83, 9, 0.1);
 
   .fa-sun {
     display : none;
@@ -34,18 +45,29 @@
 }
 
 html[data-theme='dark'] {
-  --global-bg-color: #{$grey-color-dark};
+  --global-bg-color: #0B101B;
   --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color-light};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
+  --global-text-color: #E2E8F0;
+  --global-text-color-light: #94A3B8;
+  --global-theme-color: #{$teal-color-light};
+  --global-theme-tint: rgba(61, 197, 183, 0.12);
+  --global-hover-color: #{$teal-color-light};
+  --global-footer-bg-color: #0F1624;
+  --global-footer-text-color: #94A3B8;
+  --global-footer-link-color: #E2E8F0;
   --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
+  --global-divider-color: #1E293B;
+  --global-card-bg-color: #101828;
+
+  /* Research-topic accents */
+  --topic-structure: #818CF8;
+  --topic-structure-tint: rgba(129, 140, 248, 0.14);
+  --topic-safety: #FB7185;
+  --topic-safety-tint: rgba(251, 113, 133, 0.13);
+  --topic-human: #3DC5B7;
+  --topic-human-tint: rgba(61, 197, 183, 0.12);
+  --topic-agents: #FBBF24;
+  --topic-agents-tint: rgba(251, 191, 36, 0.12);
 
   .fa-sun {
     padding-left: 10px;
