@@ -17,15 +17,15 @@
   --global-divider-color: #E2E8F0;
   --global-card-bg-color: #{$white-color};
 
-  /* Research-topic accents */
-  --topic-structure: #4F46E5;
-  --topic-structure-tint: rgba(79, 70, 229, 0.1);
-  --topic-safety: #E11D48;
-  --topic-safety-tint: rgba(225, 29, 72, 0.09);
+  /* Research-topic accents — unified to the site teal */
+  --topic-structure: #0F766E;
+  --topic-structure-tint: rgba(15, 118, 110, 0.1);
+  --topic-safety: #0F766E;
+  --topic-safety-tint: rgba(15, 118, 110, 0.1);
   --topic-human: #0F766E;
   --topic-human-tint: rgba(15, 118, 110, 0.1);
-  --topic-agents: #B45309;
-  --topic-agents-tint: rgba(180, 83, 9, 0.1);
+  --topic-agents: #0F766E;
+  --topic-agents-tint: rgba(15, 118, 110, 0.1);
 
   /* People accents */
   --person-color: #0284C7;
@@ -62,15 +62,15 @@ html[data-theme='dark'] {
   --global-divider-color: #1E293B;
   --global-card-bg-color: #101828;
 
-  /* Research-topic accents */
-  --topic-structure: #818CF8;
-  --topic-structure-tint: rgba(129, 140, 248, 0.14);
-  --topic-safety: #FB7185;
-  --topic-safety-tint: rgba(251, 113, 133, 0.13);
+  /* Research-topic accents — unified to the site teal */
+  --topic-structure: #3DC5B7;
+  --topic-structure-tint: rgba(61, 197, 183, 0.12);
+  --topic-safety: #3DC5B7;
+  --topic-safety-tint: rgba(61, 197, 183, 0.12);
   --topic-human: #3DC5B7;
   --topic-human-tint: rgba(61, 197, 183, 0.12);
-  --topic-agents: #FBBF24;
-  --topic-agents-tint: rgba(251, 191, 36, 0.12);
+  --topic-agents: #3DC5B7;
+  --topic-agents-tint: rgba(61, 197, 183, 0.12);
 
   /* People accents */
   --person-color: #38BDF8;
