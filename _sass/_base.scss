@@ -1625,6 +1625,71 @@ h1, h2, h3, h4, h5, h6, .post-title, .navbar {
 }
 
 
+// Blog landing cards
+
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.3rem 1.5rem;
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.7rem;
+  text-decoration: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    box-shadow: 0 6px 20px rgba(2, 8, 20, 0.08);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+
+  .blog-card-tag {
+    align-self: flex-start;
+    padding: 0.15em 0.7em;
+    border-radius: 999px;
+    background: var(--global-theme-tint);
+    color: var(--global-theme-color);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .blog-card-title {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--global-text-color);
+
+    i {
+      color: var(--global-text-color-light);
+    }
+  }
+
+  .blog-card-desc {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: var(--global-text-color-light);
+  }
+
+  .blog-card-meta {
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    color: var(--person-color);
+    font-weight: 600;
+  }
+}
+
 // Respect users who opt out of motion
 
 @media (prefers-reduced-motion: reduce) {
@@ -1633,6 +1698,7 @@ h1, h2, h3, h4, h5, h6, .post-title, .navbar {
   .publications .pub-topic-tab,
   ol.bibliography li,
   .news .news-item,
+  .blog-card,
   .post .clearfix a {
     transition: none;
 
