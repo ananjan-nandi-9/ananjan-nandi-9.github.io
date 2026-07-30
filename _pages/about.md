@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <span class="role">Founder & Researcher</span> @ <span class="affiliation">Stanford University</span> & <span class="affiliation">Northeastern University</span>
+subtitle: <span class="role">Founder</span> <span class="stealth-badge">(stealth)</span> &middot; <span class="role">Researcher</span> @ <span class="affiliation">Stanford</span> & <span class="affiliation">Northeastern</span>
 profile:
   align: right
   image: sequoia_face.jpg

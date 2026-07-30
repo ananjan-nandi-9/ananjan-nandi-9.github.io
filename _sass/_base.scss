@@ -1088,20 +1088,6 @@ progress {
   object-fit: cover;
 }
 
-// Research-spectrum accents threaded through the page
-
-.profile img.rounded-circle {
-  padding: 5px;
-  background: conic-gradient(
-    from 20deg,
-    var(--topic-structure),
-    var(--topic-safety),
-    var(--topic-human),
-    var(--topic-agents),
-    var(--topic-structure)
-  );
-}
-
 .news > h2::after,
 .publications > h2::after {
   content: '';
@@ -1222,6 +1208,10 @@ h1, h2, h3, h4, h5, h6, .post-title, .navbar {
   .affiliation {
     color: var(--global-text-color);
     font-weight: 600;
+  }
+
+  .stealth-badge {
+    color: var(--global-text-color-light);
   }
 }
 
