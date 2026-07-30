@@ -1,12 +1,8 @@
 
           <div class="publications">
             <h2>Publications</h2>
-            <p class="pub-list-note">
-              Grouped by topic &mdash; click a topic to explore. See the <a href="{{ '/publications/' | relative_url }}">full chronological list</a>
-              or <a href="https://scholar.google.com/citations?user=I3uNMUEAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>.
-            </p>
 
-            {% assign topic_list = "structure|fa-project-diagram|Structure & Generalization|Leveraging linguistic and symbolic structure for more robust, data-efficient models. ;; safety|fa-shield-alt|Robustness & Safety|Stress-testing and improving models across attacks, languages and distribution shifts. ;; human|fa-user-friends|Human-Centered AI|Building AI systems with and for the domain experts and communities who use them. ;; agents|fa-robot|Programmable Agents|Runtimes and abstractions for inspecting, steering and composing LLM agents." | split: " ;; " %}
+            {% assign topic_list = "agents|fa-robot|Meta-Agents ;; structure|fa-project-diagram|Structure & Generalization in LMs ;; safety|fa-shield-alt|AI Robustness & Safety ;; human|fa-user-friends|Human-Centered AI" | split: " ;; " %}
 
             <div class="pub-topic-tabs" role="tablist" aria-label="Publication topics">
               {% for topic_entry in topic_list %}
@@ -31,7 +27,6 @@
                    data-topic="{{ topic_key }}"
                    role="tabpanel"
                    aria-labelledby="pub-tab-{{ topic_key }}">
-                <p class="topic-desc">{{ topic_parts[3] }}</p>
                 {% bibliography -f papers -q @*[topic={{ topic_key }}]* %}
               </div>
             {% endfor %}

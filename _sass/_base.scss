@@ -1347,13 +1347,6 @@ h1, h2, h3, h4, h5, h6, .post-title, .navbar {
       display: block;
     }
 
-    .topic-desc {
-      margin: 0 0 1.1rem;
-      padding-left: 0.75rem;
-      border-left: 3px solid var(--topic-accent);
-      font-size: 0.88rem;
-      color: var(--global-text-color-light);
-    }
   }
 
   .pub-topic-tab,
@@ -1461,6 +1454,10 @@ h1, h2, h3, h4, h5, h6, .post-title, .navbar {
       font-size: 0.9rem;
       color: var(--global-text-color-light);
 
+      strong {
+        color: var(--person-color);
+      }
+
       > em {
         border-bottom: none;
         font-style: normal;
@@ -1535,7 +1532,7 @@ h1, h2, h3, h4, h5, h6, .post-title, .navbar {
         background: none;
         padding: 0;
         margin-top: 0.2rem;
-        color: var(--global-theme-color);
+        color: var(--person-color);
         font-size: 0.84rem;
         font-weight: 600;
         cursor: pointer;
