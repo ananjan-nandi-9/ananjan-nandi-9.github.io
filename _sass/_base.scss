@@ -1141,6 +1141,10 @@ progress {
   a.topic-agents:hover {
     color: var(--topic-agents);
   }
+  a.person,
+  a.person:hover {
+    color: var(--person-color);
+  }
 }
 
 footer {

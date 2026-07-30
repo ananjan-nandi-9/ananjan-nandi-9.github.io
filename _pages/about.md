@@ -13,7 +13,7 @@ social: true
 published: true
 ---
 
-I am a founder, currently building in stealth — I turned down a Stanford PhD to do this. On the research side, I informally collaborate with groups at [Stanford University](https://www.stanford.edu/) and [Northeastern University](https://www.northeastern.edu/), including [Chris Manning](https://nlp.stanford.edu/~manning/){:.person}, [Monica Lam](https://suif.stanford.edu/~lam/){:.person}, and [Weiyan Shi](https://wyshi.github.io/){:.person}.
+I am a founder, currently building in stealth. On the research side, I informally collaborate with groups at [Stanford University](https://www.stanford.edu/) and [Northeastern University](https://www.northeastern.edu/), including [Chris Manning](https://nlp.stanford.edu/~manning/){:.person}, [Monica Lam](https://suif.stanford.edu/~lam/){:.person}, and [Weiyan Shi](https://wyshi.github.io/){:.person}.
 
 My research aims to build a future where LLMs can reliably handle the knowledge work no human should waste time on, while still leaving room for human flourishing. Towards this goal, I build systems that let [agents manage other agents](https://arxiv.org/abs/2605.10913){:.topic-agents}, and I work on stewarding such systems toward [responsible use](https://meta-agents-workshop.github.io/){:.topic-agents}. This is informed by my earlier research on [AI safety](https://mdoumbouya.github.io/h4rm3l/){:.topic-safety}, [AI for therapy and upskilling](https://aclanthology.org/2024.emnlp-main.591/){:.topic-human}, and building [interpretability](https://aclanthology.org/2025.naacl-long.407/){:.topic-structure} and [robustness](https://openreview.net/forum?id=yt40xuRBA9){:.topic-safety} directly into models.
 
