@@ -125,7 +125,7 @@
             {%- if site.data.venues[entry.abbr] and site.data.venues[entry.abbr].color != blank -%}
               {%- assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' -%}
             {%- endif -%}
-            <span class="venue-pill" {% if venue_style %}{{venue_style}}{% endif %}>{{entry.abbr}}</span>
+            <span class="venue-pill" {% if venue_style %}{{venue_style}}{% endif %}{% if entry.booktitle %} title="{{ entry.booktitle }}"{% elsif entry.journal %} title="{{ entry.journal }}"{% endif %}>{{entry.abbr}}</span>
             <span class="pub-date">{{ entrymonth }}{{ entryyear }}</span>
           {%- else -%}
             <span class="periodical">{{ entrytype }}{{ entrymonth }}{{ entryyear | strip }}</span>
@@ -147,6 +147,8 @@
           <div class="links">
           {%- if entry.arxiv %}
             <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button"><i class="fas fa-file-alt"></i>Paper</a>
+          {%- elsif entry.url %}
+            <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button"><i class="fas fa-file-alt"></i>Paper</a>
           {%- endif %}
           {%- if entry.bibtex_show %}
             <a class="bibtex btn btn-sm z-depth-0" role="button"><i class="fas fa-quote-right"></i>BibTeX</a>
