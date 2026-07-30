@@ -17,18 +17,18 @@
   --global-divider-color: #E2E8F0;
   --global-card-bg-color: #{$white-color};
 
-  /* Research-topic accents — unified vibrant violet */
-  --topic-structure: #7C3AED;
-  --topic-structure-tint: rgba(124, 58, 237, 0.1);
-  --topic-safety: #7C3AED;
-  --topic-safety-tint: rgba(124, 58, 237, 0.1);
-  --topic-human: #7C3AED;
-  --topic-human-tint: rgba(124, 58, 237, 0.1);
-  --topic-agents: #7C3AED;
-  --topic-agents-tint: rgba(124, 58, 237, 0.1);
+  /* Research-topic accents — unified to the site teal-green */
+  --topic-structure: #0F766E;
+  --topic-structure-tint: rgba(15, 118, 110, 0.1);
+  --topic-safety: #0F766E;
+  --topic-safety-tint: rgba(15, 118, 110, 0.1);
+  --topic-human: #0F766E;
+  --topic-human-tint: rgba(15, 118, 110, 0.1);
+  --topic-agents: #0F766E;
+  --topic-agents-tint: rgba(15, 118, 110, 0.1);
 
   /* People accents */
-  --person-color: #B45309;
+  --person-color: #0284C7;
 
   .fa-sun {
     display : none;
@@ -62,18 +62,18 @@ html[data-theme='dark'] {
   --global-divider-color: #1E293B;
   --global-card-bg-color: #101828;
 
-  /* Research-topic accents — unified vibrant violet */
-  --topic-structure: #A78BFA;
-  --topic-structure-tint: rgba(167, 139, 250, 0.14);
-  --topic-safety: #A78BFA;
-  --topic-safety-tint: rgba(167, 139, 250, 0.14);
-  --topic-human: #A78BFA;
-  --topic-human-tint: rgba(167, 139, 250, 0.14);
-  --topic-agents: #A78BFA;
-  --topic-agents-tint: rgba(167, 139, 250, 0.14);
+  /* Research-topic accents — unified to the site teal-green */
+  --topic-structure: #3DC5B7;
+  --topic-structure-tint: rgba(61, 197, 183, 0.12);
+  --topic-safety: #3DC5B7;
+  --topic-safety-tint: rgba(61, 197, 183, 0.12);
+  --topic-human: #3DC5B7;
+  --topic-human-tint: rgba(61, 197, 183, 0.12);
+  --topic-agents: #3DC5B7;
+  --topic-agents-tint: rgba(61, 197, 183, 0.12);
 
   /* People accents */
-  --person-color: #FBBF24;
+  --person-color: #38BDF8;
 
   .fa-sun {
     padding-left: 10px;
