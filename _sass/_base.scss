@@ -126,9 +126,13 @@ blockquote {
   font-size: 0.875rem;
   a {
     color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--global-theme-tint);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
     &:hover {
       color: var(--global-theme-color);
-      text-decoration: none;
+      text-decoration-color: var(--global-theme-color);
     }
   }
 }
@@ -1704,10 +1708,6 @@ h1, h2, h3, h4, h5, h6, .post-title, .navbar {
     font-size: 1.15rem;
     font-weight: 700;
     color: var(--global-text-color);
-
-    i {
-      color: var(--global-text-color-light);
-    }
   }
 
   .blog-card-desc {
@@ -1717,12 +1717,6 @@ h1, h2, h3, h4, h5, h6, .post-title, .navbar {
     color: var(--global-text-color-light);
   }
 
-  .blog-card-meta {
-    margin-top: 0.4rem;
-    font-size: 0.8rem;
-    color: var(--person-color);
-    font-weight: 600;
-  }
 }
 
 // Respect users who opt out of motion
