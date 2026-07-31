@@ -9,7 +9,7 @@ nav_order: 2
 <div class="blog-list">
   <a class="blog-card" href="https://shepherd-agents.ai/blog/">
     <div class="blog-card-thumb">
-      <img src="{{ '/assets/img/publication_preview/shepherd.svg' | relative_url }}" alt="Shepherd">
+      <img src="{{ '/assets/img/publication_preview/shepherd.png' | relative_url }}" alt="Shepherd">
     </div>
     <div class="blog-card-body">
       <span class="blog-card-tag">Shepherd</span>
